@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - VOrgreens</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <img src="img/menu.svg" alt="">
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="findus.html">Find Us</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <a href="index.html"><img src="img/logo-text.png" alt=""></a>
+                <h5>Contact Information</h5>
+                <p>Any question or remarks? Just write us a message!</p>
+            </div>
+            <form action="" onsubmit="return validation()">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Full Name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email Address">
+                </div>
+                <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <div class="gender-male">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender-female">
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message" placeholder="Write your message">
+                </div>
+                <div class="input-group input-checkbox">
+                    <input type="checkbox" name="agree" id="agree"><label for="agree">By clicking this I am
+                        agree to
+                        subscribe to VOrgreens*</label>
+                </div>
+                <div class="contact-footer">
+                    <button class="btn-primary" value="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <img src="img/logo-white.png" alt="">
+                </div>
+                <div class="footer-top-right">
+                    <ul>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>©Copyright VOrgreens. All Right Reserved</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <div class="phone">
+                        <img src="img/phone.svg" alt="">
+                        <p>+6282153453235</p>
+                    </div>
+                    <div class="social-media">
+                        <ul>
+                            <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+                            <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+                            <li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+                            <li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

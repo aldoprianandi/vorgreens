@@ -1,0 +1,83 @@
+$primary : #64A71A;
+$secondary : #F7931E;
+$secondary-text :#636363;
+$primary-text : #1C1C1C;
+$secondary-div: #FAFFE3;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: $primary-text;
+}
+
+h1 {
+    color: $primary;
+}
+
+p {
+    color: $secondary-text;
+    line-height: 28px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+.btn-primary {
+    font-weight: 600;
+    display: inline-block;
+    background-color: $secondary;
+    padding: .75rem 2rem;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: darken($secondary, 10%);
+    }
+}
+
+.btn-secondary {
+    font-weight: 600;
+    display: inline-block;
+    padding: .75rem 2rem;
+    color: #fff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    background-color: $primary;
+
+    &:hover {
+        background-color: darken($primary, 10%);
+    }
+}

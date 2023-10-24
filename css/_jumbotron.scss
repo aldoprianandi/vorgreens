@@ -1,0 +1,30 @@
+.jumbotron {
+    padding: 2rem 0;
+    background: linear-gradient(180deg, $secondary-div, #fff);
+
+    &-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-left {
+        flex-basis: 50%;
+
+        p {
+            margin: 1rem 0;
+        }
+    }
+
+    &-right {
+        flex-basis: 40%;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            width: 90%;
+        }
+    }
+}
